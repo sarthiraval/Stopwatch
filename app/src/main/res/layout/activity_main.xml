@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0E7EC"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:hint=" 00:00:00 "
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#C0E7EC"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:onClick="onClickStart"
+            android:src="@drawable/ic_play"
+            android:text="start" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop_button"
+            android:layout_width="447dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:onClick="onClickStop"
+            android:src="@drawable/ic_pause"
+            android:text="stop" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lap_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_lap"
+            android:onClick="onClickLap"
+            android:text="lap" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:onClick="onClickReset"
+            android:src="@drawable/ic_reset"
+            android:text="lap" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/time_lapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textSize="50dp"
+                android:hint="00:00:00 "/>
+
+    </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<Button-->
+    <!--        android:id="@+id/start_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:onClick="onClickStart"-->
+    <!--        android:text="start" />-->
+    <!--    android:text="@string/start"-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/stop_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:onClick="onClickStop"-->
+    <!--        android:text="stop"-->
+    />
+    <!--    android:text="@string/stop"-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/reset_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:onClick="onClickReset"-->
+    <!--        android:text="Reset" />-->
+    <!--    android:text="@string/reset"-->
+</LinearLayout>
